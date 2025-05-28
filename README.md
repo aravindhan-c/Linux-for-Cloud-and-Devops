@@ -1,7 +1,6 @@
 # Linux-for-Cloud-and-Devops
 DevOps & cloud engineers uses linux commands to move files, Check logs, install softwares, run scripts & troubleshoot issues on daily basis.
 
-File System:
 In Linux, everything is represented as a file, including a hardware program. The files are stored in a directory, and every directory contains a file with a tree structure.
 The root directory is represented with / (forward slash). It is a top-level directory in Linux.
 
