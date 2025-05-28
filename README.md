@@ -9,6 +9,10 @@ The root directory is represented with / (forward slash). It is a top-level dire
 * ls - list files and directories
 * ls -l - list files and directores with permissions, timestamp and more details
 * ls -a - list hidden files and directories
+* ls -F - append a symbol at the end of a filename to indicate its type (* executabe, / directory, @ symbolic link, | pipe, > door, = socket)
+* ls -lt - list the files sorted by last modification time with most recently modified files at top
+* ls -lh - list the file size in human readable format
+* ls -lR - shows all subdirectories recursively
 * uanme - print system information 
 * unamne -r - print kernel release information
 * cd - change directory
@@ -84,12 +88,12 @@ The root directory is represented with / (forward slash). It is a top-level dire
 
 ## File System Permissions
 Three types of permission - read, write & execute. Permissions can be attached to user(u), group(g) & other(o)
-* ls -ld - list permissions of the directory
+* ls -ld <dirname> - list the info about the dir instead of its conents
 * d rwx rwx rwx - d(file type) rwx(for user) rwx(group) rwx(others)
 * 0 or --- - no permission; 1 or --x - execute; 2 or -w- - write; 4 or r-- - read
 * chmod - change permission of file and directory (chmod <permission of user group other> {filename})
 * chown - change the owner of the file and directory (chown <ownername> <filename>)
-* chgrp - change the group ownership of the files
+* chgrp - change the group ownership of the files (chgrp grp_owner filname)
 * cat - read and concatenate the text inside the files (cat -b <filename> - add line numbers while displaying contnent on terminal; cat -e <filename> - add $ symbol at the end of each line of the file)
 * grep - global regular expression print - searches files for a particular pattern and displays all the lines that contains the pattern (grep <flag or search_word> filename)
 * grep -i - Delivers results for case-insensitive strings
