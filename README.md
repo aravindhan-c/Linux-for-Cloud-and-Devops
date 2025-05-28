@@ -140,22 +140,39 @@ The root directory is owned by the root user (admin) and its permissions are tig
 
 #SUB-DIRECTORY PURPOSE
 /bin      common binary executables used by all users | essential user command binaries like ls, cp, rm; needed in single-user mode
+
 /boot     files associated with boot loader  |  boot loader files including the kernel, initrd, and GRUB configuration
+
 /dev      attached devices (usb, cdrom, mouse, keyboard) | device files representing hardware (USB, disks, terminals); managed by udev
+
 /etc      configuration files | system-wide configuration files and scripts (e.g., passwd, fstab, sshd_config)
+
 /home     personal directories for each user account | user-specific directories storing personal files and settings (e.g., /home/user)
+
 /lib      shared system libraries | shared libraries (.so files) required by binaries in /bin and /sbin
+
 /media    directory for mounting removable devices (floppy drive, cdrom) |  mount point for removable media automatically handled (e.g., USB, CD-ROM)
+
 /mnt      directory for mounting filesystems (nfs, smb) | temporary mount point used by administrators to manually mount filesystems
+
 /opt      optional vendor add-on software | optional third-party application software (e.g., /opt/google/chrome)
+
 /proc     virtual filesystem for system processes/resources information |  virtual filesystem with runtime system/process information (e.g., cpuinfo, meminfo)
+
 /root     home directory for administrator account | home directory of the root user (administrator); separate from /home
+
 /run      storage for runtime information | transient runtime data (e.g., PID files, sockets) since last boot
+
 /sbin     binary executables used by administrator | system administration binaries (e.g., reboot, fdisk, ifconfig); typically used by root
+
 /srv      data for server services | data for services like web or FTP (e.g., /srv/www for web content)
+
 /sys      virtual filesystem for hardware/driver information | virtual filesystem showing kernel devices and drivers (hardware-level info)
+
 /tmp      temporary files purged on reboot | temporary files used by apps; deleted on reboot
+
 /usr      utilities and read-only user data/programs | user utilities, applications, and read-only data (e.g., /usr/bin, /usr/share)
+
 /var      variable and log files | variable data like logs, mail, spool, cache that frequently changes (e.g., /var/log)
 
 
