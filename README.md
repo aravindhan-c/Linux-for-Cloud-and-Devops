@@ -64,6 +64,7 @@ The root directory is represented with / (forward slash). It is a top-level dire
 * ps aux - display all currently running processes (process status)
 * top - real-time info about currently running processes of the system
 * kill <pid> - terminate a process
+* kill -9 pid - forceful termination
 * systemctl - manage system services
 * du - display directory disk space usage 
 * df -h - display disk space usage
@@ -71,6 +72,8 @@ The root directory is represented with / (forward slash). It is a top-level dire
 * free -g - display memory details in GB
 * uptime - display system uptime
 * nice - set process priority
+* jobs - list all jobs that are running or stopped in the current shell session
+* lsof -i:8080 - check which process running on specific port
 
 ## Networking
 * ifconfig - information about network interface/ display network configuration
